@@ -56,7 +56,69 @@ h1 {
   background-color: white;
   padding: 1rem 0;
   text-align: center;
+  line-height: a.2;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.product-features {
+  flex-direction: column;
+  align-items: center;
+  padding: 3.77rem 0.75rem 1.23rem 0.75rem;
+}
+
+.feature {
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature h3 {
+  padding-top: 1rem;
+  padding-bottom: 1.54rem;
+  font-size: 0.77rem;
+}
+
+#paper img{
+  width: 3rem;
+}
+
+#ruler img, #truck img {
+  width: 5rem;
+}
+
+.main-info {
+  flex-direction: column;
+}
+
+.main-info h2{
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem 1.25rem;
+}
+
+.main-info p {
+  font-size: 0.77rem;
+  margin: 1rem 0.75rem 4rem 0.75rem;
+}
+
+footer {
+  background-color: azure;
+  padding: 4rem;
+}
+
+.copyright {
+  justify-content: center;
+}
+
+.copyright img {
+  height: 1.5rem;
+}
+
+.copyright p {
+  display: none;
 }
