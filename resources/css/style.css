@@ -14,6 +14,13 @@ a {
   display: flex;
 }
 
+header {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  height: 18rem;
+  background-size: cover;
+  background-position: 20%;
+}
+
 .nav-bar {
   background-color: cadetblue;
   align-items: center;
@@ -40,13 +47,6 @@ a {
   display: none;
 }
 
-header {
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
-  height: 18rem;
-  background-size: cover;
-  background-position: 20%;
-}
-
 .headline-container {
   padding-top: 12.5rem;
   width: 100%;
@@ -54,9 +54,10 @@ header {
 
 h1 {
   background-color: white;
+  width: 100%;
   padding: 1rem 0;
   text-align: center;
-  line-height: a.2;
+  line-height: 1.2;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -91,7 +92,7 @@ h1 {
   flex-direction: column;
 }
 
-.main-info h2{
+.main-info h2 {
   background-color: cadetblue;
   font-weight: bold;
   font-size: 1rem;
@@ -121,4 +122,100 @@ footer {
 
 .copyright p {
   display: none;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 22rem;
+    width: auto;
+    background-position: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .wordmark {
+    display: flex;
+    font-size: 1rem;
+  }
+
+  #navToggle {
+    display: none;
+  }
+
+  .nav-container {
+    display: flex;
+  }
+
+ul, li {
+    padding-right: 2rem;
+  }
+
+  .headline-container {
+    padding-top: 7.5rem;
+    padding-right: 2rem;
+    justify-content: flex-end;
+  }
+
+  h1 {
+    background-color: white;
+    width: 37%;
+    margin-right: 2rem;
+    padding: 1.5rem 4rem;
+    text-align: center;
+    font-size: 1.33rem;
+  }
+
+  .product-features {
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem 0rem;
+  }
+
+  .feature {
+    height: 8rem;
+    width: 5rem;
+    padding: 0rem 3rem;
+    justify-content: space-between;
+  }
+
+  .feature h3 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .main-info {
+    flex-direction: row;
+    padding-bottom: 5rem;
+    justify-content: space-around;
+  }
+
+  .main-info h2 {
+    text-align: left;
+    width: 10rem;
+  }
+
+  .main-info p {
+    font-size: 1rem;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .philosophy, .appointments {
+    width: 35%;
+  }
+
+  .copyright {
+    justify-content: flex-start;
+  }
+
+  .copyright p {
+    display: block;
+    padding-left: 1rem;
+  }
 }
