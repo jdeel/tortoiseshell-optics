@@ -48,11 +48,12 @@ header {
 }
 
 .headline-container {
-  padding-top: 12.5rem;
+  align-items: center;
   width: 100%;
 }
 
 h1 {
+  margin-top: 12.5rem;
   background-color: white;
   width: 100%;
   padding: 1rem 0;
@@ -158,17 +159,15 @@ ul, li {
   }
 
   .headline-container {
-    padding-top: 7.5rem;
-    padding-right: 2rem;
+    width: 100%;
     justify-content: flex-end;
   }
 
   h1 {
-    background-color: white;
-    width: 37%;
+    margin-top: 5rem;
     margin-right: 2rem;
+    width: 37%;
     padding: 1.5rem 4rem;
-    text-align: center;
     font-size: 1.33rem;
   }
 
@@ -193,7 +192,7 @@ ul, li {
   .main-info {
     flex-direction: row;
     padding-bottom: 5rem;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .main-info h2 {
@@ -208,6 +207,7 @@ ul, li {
 
   .philosophy, .appointments {
     width: 35%;
+    margin: 0 2.5%;
   }
 
   .copyright {
@@ -217,5 +217,45 @@ ul, li {
   .copyright p {
     display: block;
     padding-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  header {
+    height: 31rem;
+    background-position: 30%;
+    justify-content: center;
+  }
+
+  .nav-bar {
+    width: 960px;
+    margin-top: 1rem;
+  }
+
+  ul, li {
+    padding-right: 0;
+    padding-left: 2rem;
+  }
+
+  .headline-container {
+    width: 960px;
+    }
+
+  h1 {
+    margin-top: 10rem;
+    margin-right: -2rem;
+    width: auto;
+    padding: 1.5rem 5rem;
+    font-size: 2rem;
+  }
+
+  main {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  footer {
+    width: 960px;
+    margin: 0 auto;
   }
 }
